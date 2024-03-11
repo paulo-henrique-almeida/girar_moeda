@@ -12,13 +12,13 @@ btnGirar.addEventListener("click", () => {
     if (cc) {
         setTimeout(function () {
             moeda.style.animation = "girar-cara 3s forwards";
-            caras++;
         }, 100);
+        caras++;
     } else {
         setTimeout(function () {
             moeda.style.animation = "girar-coroa 3s forwards";
-            coroas++;
         }, 100);
+        coroas++;
     }
 
     setTimeout(updateStats(), 3000);
